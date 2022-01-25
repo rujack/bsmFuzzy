@@ -1,4 +1,13 @@
-document.getElementById("cek").onclick = function () {
+document.getElementById("cek").click = Fuzzy();
+
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("cek").click();
+  }
+});
+
+function Fuzzy() {
   kps = 0;
   tg = document.getElementById("tg").value;
   rnr = document.getElementById("rnr").value;
@@ -278,6 +287,119 @@ document.getElementById("cek").onclick = function () {
     pt_sedang,
     kr_tidak,
   );
+  new DapatBSM(
+    kps_punya,
+    tg_banyak,
+    rnr_sedang,
+    po_kecil,
+    pt_sedang,
+    kr_tidak,
+  );
+  new DapatBSM(
+    kps_punya,
+    tg_sedikit,
+    rnr_sedang,
+    po_kecil,
+    pt_sedang,
+    kr_tidak,
+  );
+  new DapatBSM(
+    kps_punya,
+    tg_banyak,
+    rnr_tinggi,
+    po_kecil,
+    pt_sedang,
+    kr_tidak,
+  );
+  new DapatBSM(
+    kps_punya,
+    tg_sedikit,
+    rnr_tinggi,
+    po_kecil,
+    pt_sedang,
+    kr_tidak,
+  );
+  new DapatBSM(
+    kps_punya,
+    tg_banyak,
+    rnr_rendah,
+    po_kecil,
+    pt_sedikit,
+    kr_tidak,
+  );
+  new DapatBSM(
+    kps_punya,
+    tg_sedikit,
+    rnr_rendah,
+    po_kecil,
+    pt_sedikit,
+    kr_tidak,
+  );
+  new DapatBSM(
+    kps_punya,
+    tg_banyak,
+    rnr_rendah,
+    po_sedang,
+    pt_sedang,
+    kr_tidak,
+  );
+  new DapatBSM(
+    kps_punya,
+    tg_sedang,
+    rnr_rendah,
+    po_sedang,
+    pt_sedang,
+    kr_tidak,
+  );
+  new DapatBSM(
+    kps_punya,
+    tg_sedikit,
+    rnr_rendah,
+    po_sedang,
+    pt_sedang,
+    kr_tidak,
+  );
+  new DapatBSM(
+    kps_punya,
+    tg_banyak,
+    rnr_sedang,
+    po_sedang,
+    pt_banyak,
+    kr_tidak,
+  );
+  new DapatBSM(
+    kps_punya,
+    tg_sedikit,
+    rnr_sedang,
+    po_sedang,
+    pt_banyak,
+    kr_tidak,
+  );
+  new DapatBSM(
+    kps_punya,
+    tg_banyak,
+    rnr_tinggi,
+    po_sedang,
+    pt_banyak,
+    kr_tidak,
+  );
+  new DapatBSM(
+    kps_punya,
+    tg_sedikit,
+    rnr_tinggi,
+    po_sedang,
+    pt_banyak,
+    kr_tidak,
+  );
+  new DapatBSM(
+    kps_punya,
+    tg_sedang,
+    rnr_tinggi,
+    po_sedang,
+    pt_banyak,
+    kr_tidak,
+  );
+  
 
   // Tidak Dapat BSM
   new TidakBSM(
