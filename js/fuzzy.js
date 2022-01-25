@@ -1,12 +1,5 @@
 document.getElementById("cek").click = Fuzzy();
 
-input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-   event.preventDefault();
-   document.getElementById("cek").click();
-  }
-});
-
 function Fuzzy() {
   kps = 0;
   tg = document.getElementById("tg").value;
