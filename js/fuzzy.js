@@ -1,6 +1,4 @@
-document.getElementById("cek").click = Fuzzy();
-
-function Fuzzy() {
+document.getElementById("cek").onclick = function() {
   kps = 0;
   tg = document.getElementById("tg").value;
   rnr = document.getElementById("rnr").value;
