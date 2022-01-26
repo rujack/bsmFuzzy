@@ -391,6 +391,15 @@ document.getElementById("cek").onclick = function() {
     kr_tidak,
   );
   
+new DapatBSM(
+    kps_punya,
+    tg_banyak,
+    rnr_tinggi,
+    po_kecil,
+    pt_banyak,
+    kr_punya,
+  );
+
 
   // Tidak Dapat BSM
   new TidakBSM(
